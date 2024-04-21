@@ -1,7 +1,6 @@
 import  express  from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import userRoute from "../api/Routes/User.js"
 import bookRoute from "../api/Routes/Booking.js"
 import roomRoute from "../api/Routes/Room.js"
 import authRoute from "../api/Routes/auth.js"
@@ -43,7 +42,6 @@ app.use(cors());
 app.use("/api/auth", authRoute);
 app.use("/api/book", bookRoute);
 app.use("/api/room", roomRoute);
-app.use("/api/users", userRoute);
 app.use("/api/checkout", paymentRoute);
 
 app.use((err , req ,res, next )=>{
