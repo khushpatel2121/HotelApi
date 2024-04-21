@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import bookRoute from "./Routes/Booking.js"
 import roomRoute from "./Routes/Room.js"
 import authRoute from "./Routes/auth.js"
-import paymentRoute from "../api/Routes/Razorpay.js"
+import paymentRoute from "./Routes/Razorpay.js"
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
